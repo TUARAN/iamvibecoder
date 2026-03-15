@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="zh-CN">
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning>
         <div className="relative min-h-screen overflow-hidden">
           <SiteHeader />
           <main>{children}</main>
