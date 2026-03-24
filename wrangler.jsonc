@@ -1,7 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "main": ".open-next/worker.js",
-  "name": "iamvibecoder-web",
+  "name": "iamvibecoder",
   "account_id": "4c0eea1ce5d93ebf856f6d5ee1d58bfb",
   "build": {
     "command": "npx @opennextjs/cloudflare build"
@@ -15,7 +15,7 @@
   "services": [
     {
       "binding": "WORKER_SELF_REFERENCE",
-      "service": "iamvibecoder-web"
+      "service": "iamvibecoder"
     }
   ],
   "routes": [

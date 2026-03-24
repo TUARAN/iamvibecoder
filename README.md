@@ -1,6 +1,6 @@
-# iamvibecoder-web
+# iamvibecoder
 
-`iamvibecoder-web` 是一个基于 Next.js 15 构建的中文品牌站点，用来展示「人人都是程序员」这套叙事和内容结构。网站核心表达是：从“下载软件”转向“生成软件”，让用户围绕真实需求直接生成页面、工具和工作流。
+`iamvibecoder` 是一个基于 Next.js 15 构建的中文品牌站点，用来展示「人人都是程序员」这套叙事和内容结构。网站核心表达是：从“下载软件”转向“生成软件”，让用户围绕真实需求直接生成页面、工具和工作流。
 
 线上站点地址：[`https://iamvibecoder.cn`](https://iamvibecoder.cn)
 
@@ -126,7 +126,7 @@ lib/
 
 ## 内容维护
 
-大部分页面内容来自 [`lib/content.ts`](/Users/tuaran/Documents/GitHub/iamvibecoder-web/lib/content.ts)。如果需要调整导航、首页模块文案、栏目配置、社区机制或 manifesto，优先修改这个文件；页面组件本身主要负责结构和展示。
+大部分页面内容来自 [`lib/content.ts`](/Users/tuaran/Documents/GitHub/iamvibecoder/lib/content.ts)。如果需要调整导航、首页模块文案、栏目配置、社区机制或 manifesto，优先修改这个文件；页面组件本身主要负责结构和展示。
 
 ## 已知情况
 
