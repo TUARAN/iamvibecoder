@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Route } from "next";
 
 import { ExternalSiteLink } from "@/components/external-site-link";
 
@@ -7,7 +8,7 @@ const footerLinks = [
   { label: "栏目体系", href: "/columns" },
   { label: "社区机制", href: "/community" },
   { label: "品牌主张", href: "/about" }
-];
+] satisfies Array<{ label: string; href: Route }>;
 
 export function SiteFooter() {
   return (

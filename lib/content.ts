@@ -1,10 +1,12 @@
+import type { Route } from "next";
+
 export const navItems = [
   { label: "立即 Vibe", href: "/#hero" },
   { label: "场景造物", href: "/scenes" },
   { label: "栏目体系", href: "/columns" },
   { label: "社区机制", href: "/community" },
   { label: "关于", href: "/about" }
-];
+] satisfies Array<{ label: string; href: Route }>;
 
 export const heroMetrics = [
   { value: "100+", label: "可直接生成的工具灵感" },
