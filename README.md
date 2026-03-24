@@ -62,6 +62,16 @@ npm run preview
 npm run deploy
 ```
 
+如果是在 Cloudflare 的远程构建环境中部署，不要把“Build command 产物”当作一定会传递到“Deploy command”阶段。当前仓库已经在 [`wrangler.jsonc`](/Users/tuaran/Documents/GitHub/iamvibecoder/wrangler.jsonc) 中配置了：
+
+```jsonc
+"build": {
+  "command": "npx @opennextjs/cloudflare build"
+}
+```
+
+这会让 Wrangler 在部署前自行生成 `.open-next`，从而避免 `Could not find compiled Open Next config`。
+
 如果只想先上传 Worker 而不走完整部署流程，可以使用：
 
 ```bash
@@ -121,3 +131,5 @@ lib/
 ## 已知情况
 
 本地启动时可能会看到 `@next/swc-darwin-arm64` 的加载警告，但在当前环境下开发服务仍可正常进入 `Ready` 状态并提供页面访问。如果后续出现编译异常，建议先重新安装依赖或清理损坏的原生包。
+
+如果部署时报错 `Hostname 'iamvibecoder.cn' already has externally managed DNS records`，说明该域名当前已有 A/CNAME 等 DNS 记录，Cloudflare 不会直接接管同名 Worker 自定义域。需要先删除或改写现有记录，再重新绑定这个自定义域。

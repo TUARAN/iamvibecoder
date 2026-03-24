@@ -3,6 +3,9 @@
   "main": ".open-next/worker.js",
   "name": "iamvibecoder-web",
   "account_id": "4c0eea1ce5d93ebf856f6d5ee1d58bfb",
+  "build": {
+    "command": "npx @opennextjs/cloudflare build"
+  },
   "compatibility_date": "2026-03-24",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "assets": {
